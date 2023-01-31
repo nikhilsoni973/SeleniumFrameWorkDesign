@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="testcomponent.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="SubmitOrder(failed)" verbose="0">
+    <classes>
+      <class name="NikhilSoniAcademy.StandOrderTest">
+        <methods>
+          <include name="StandOrderTests"/>
+          <include name="launchApplication"/>
+          <include name="verifyingOrderPage"/>
+        </methods>
+      </class> <!-- NikhilSoniAcademy.StandOrderTest -->
+    </classes>
+  </test> <!-- SubmitOrder(failed) -->
+  <test thread-count="5" name="ErrorValidation(failed)" verbose="0">
+    <classes>
+      <class name="NikhilSoniAcademy.ErrorValidation">
+        <methods>
+          <include name="ErrorValidations"/>
+          <include name="launchApplication"/>
+          <include name="checkingForProducts"/>
+        </methods>
+      </class> <!-- NikhilSoniAcademy.ErrorValidation -->
+    </classes>
+  </test> <!-- ErrorValidation(failed) -->
+</suite> <!-- Failed suite [Suite] -->
